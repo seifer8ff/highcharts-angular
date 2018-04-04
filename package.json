@@ -1,9 +1,13 @@
 {
   "name": "highcharts-angular",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "license": "SEE LICENSE IN <LICENSE>",
-  "main": "index",
-  "typings": "index",
+  
+  "main": "./bundles/highcharts-angular.umd.js",
+  "typings": "./highcharts-angular.d.ts",
+  "module": "./esm5/highcharts-angular.js",
+  "es2015": "./esm2015/highcharts-angular.js",
+
   "description": "Highcharts component for Angular.",
   "repository": {
     "type": "git",
@@ -23,7 +27,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build",
+    "build": "angular-package-builder",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -51,6 +55,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "angular-package-builder": "^1.0.3",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",

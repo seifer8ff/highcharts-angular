@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictNullChecks": true,
     
     "allowJs": false,
 
@@ -21,6 +22,8 @@
     ]
   },
   "angularCompilerOptions": {
+    "annotateForClosureCompiler": false,
+
     "fullTemplateTypeCheck": true,
     "preserveWhiteSpaces": false
   }
